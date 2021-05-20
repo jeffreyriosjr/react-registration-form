@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.h2{
+  font-size: 33px;
+  color:blue;
+}
+.form-page {
+  font-size: 54px;
+
 }
