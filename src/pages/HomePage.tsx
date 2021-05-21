@@ -1,5 +1,5 @@
 import Form from '../components/Form';
-import '.'
+
 
 const HomePage = () => {
     
@@ -10,6 +10,7 @@ const HomePage = () => {
         <div className="container text-center mt-5">
             <h2 className='header'>Fill Form Out Here</h2>
             <Form />
+            
         </div>
     )
 };

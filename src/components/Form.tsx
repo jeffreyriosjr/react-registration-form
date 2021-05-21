@@ -8,6 +8,8 @@ const Form = () => {
     const [lastName, setLastName] = useState(''); 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [success, setSuccess] = useState(false);
+    console.log(saveUser);
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
@@ -50,9 +52,20 @@ const Form = () => {
                             onChange={e => setPassword(e.target.value)} 
                             />
                         </div>
-
-                        <button className='btn btn-primary btn-block'>Save!</button>
-                    </form>
+                        </form>
+                        <button className='btn btn-primary btn-block' onClick={handleSubmit}>Save!</button>
+                    
+                    <div className="row d-flex justify-content-center mt-3">
+                    {success ? (
+              <div>
+                  <div className='col-sm-4 alert alert-success text-center' role='alert'>
+                  You've successfully added a new user!
+                  </div>
+              </div>
+          ) : (
+              ''
+          )}
+        </div>
                 </div>
             </div>
 
